@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+/* ============ Configuracao global - Declaracao de variaveis ============ */
+
+:root{
+    --corBanner: #515050;
+    --corPrincipal: #d4a00a;
+    --corSecundaria: #d4a00a;
+    --corTitulos: #eaeaea;
+    --corTextos: #eaeaea;
+    --corOverlay: #7a7a7a;
+    --corLink: #d4a00a;
+    --corLinkHover: #4333b7;
+    --corShadow: rgba(0, 0, 0, 0.7);
+    --fontTextos: 'Open Sans', sans-serif;
+    --fontPrincipal: 'Ubuntu', sans-serif;
+    --fontPesoTextos: 400;
+    --fontLineHeigh: 1.7;
+    --fontTamanhoTextos: 1.4rem;
+    --fontTamanhoTitulos: 1.8rem;
+    --fontPesoTitulos: 700; 
+    --fontTamanhoGrandes: 1.8rem;
+    --fontTamanhoExtra: 2.5rem;
+    --sombraEfeitoTitulos: -8px -5px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* ============ Configuracao global - Selecao do mouse em texto cores ============ */
+
+::selection{
+    color: #eaeaea;
+    background: #4333b7;
+}
+
+body{
+    background-color: #434343;
+    background-color: #485461;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+}   
+
+/* ================= HEADER - CABECALHO DO SITE ================= */
+
+header .container{
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px;
+}
+
+header .container .logoM3d{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    gap: 24px;
+    color: #FFE600;
+}
+
+header .container .logoM3d svg{
+    width: 90px;
+}
+
+header .container .topMenu nav{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+header .container .topMenu nav a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #eaeaea;
+    transition: 0.5s;
+}
+
+header .container .topMenu nav a:hover{
+    text-decoration: underline 2px #d4a00a;
+    text-underline-offset: 8px;
+}
+
+header .container .topMenu nav button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    background: #d4a00a;
+    color: #eaeaea;
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer; 
+    transition: 0.5s;
+}
+
+header .container .topMenu nav button:hover{
+    background: #4333b7;
+    color: #eaeaea;
+}
+
+/* ================================== MAIN - CORPO DO SITE ==================================*/
+
+main {
+    font-family: var(--fontPrincipal)
+}
+
+main .resumo{
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 0.4px solid var(--corOverlay);
+}
+
+main .resumo .texto{
+    text-align: center;
+}
+
+main .resumo .texto details summary{
+    font-family: var(--fontPrincipal);
+    color: var(--corTitulos);
+    font-size: var(--fontTamanhoGrandes);
+    padding: 16px;
+    cursor: pointer;
+    text-decoration: underline 2px #d4a00a;
+    text-underline-offset: 8px;
+}
+
+main .resumo details p{
+    font-family: var(--fontTextos);
+    font-size: var(--fontTamanhoTextos);
+    width: 80%;
+    margin: auto;
+    color: var(--corTextos);
+    text-align: justify;
+    line-height: var(--fontLineHeigh);
+    padding: 16px;
+}
+
+main .centralTitulo{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+}
+
+main .centralTitulo svg{
+    width: 70px;
+    fill: var(--corSecundaria);
+}
+
+main .centralTitulo h3{
+    font-size: 1.5rem;
+    color: var(--corTitulos);
+}
+
+/* ============ Animacao da barrinha laranja ============ */
+
+main .centralTitulo::before{
+    content: '';
+    position: absolute;
+    width: auto;
+    height: 6px;
+    background: var(--corLink);
+    margin-top: 36px;
+    border-radius: 8px;
+    left: 50%;
+    transform: translate(-50%);
+    animation: barrinha 5s linear infinite;
+}
+
+@keyframes barrinha {
+    0%{
+        width: 5px;
+    }
+    50%{
+        width: 280px;
+        background: var(--corLinkHover);
+    }
+    100%{
+        width: 5px;
+    }
+}
+
+main .central{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 16px;
+    border-bottom: 0.4px solid var(--corOverlay);
+    gap: 2rem;
+}
+
+main .central .texto{
+    width: 380px;
+    position: relative;
+    background: var(--corLinkHover);
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.7);
+}
+
+main .central .texto ul li{
+    list-style: none;
+    font-family: var(--fontTextos);
+    font-size: var(--fontTamanhoTextos);
+    color: var(--corTitulos);
+    text-align: left;
+}
+
+main .central .foto{
+    min-height: 350px;
+    text-align: center;
+    font-family: var(--fontTextos);
+    font-size: var(--fontTamanhoTitulos);
+    color: var(--corTextos);
+}
+
+main .central .foto img{
+    width: 250px;
+    border-radius: 12px;
+    transition: 0.6s;
+    opacity: 0.65;
+}
+
+main .central .foto img:hover{
+    border-radius: 50%;
+    transform: scale(1.7);
+    opacity: 1;
+    cursor: url('img-main/zoom.png'), auto;     /* == Cursor personalizado nos cards da imgens de projeto == */
+}
+
+main .central .foto p{
+    font-family: var(--fontTextos);
+    color: var(--corSecundaria);
+}
+
+main .experiencia{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px;
+    text-shadow: var(--sombraEfeitoTitulos)
+}
+
+main .experiencia svg{
+    width: 90px;
+    fill: var(--corTextos);
+    margin-right: 100px;
+}
+
+main .experiencia h3{
+    font-size: var(--fontTamanhoTitulos);
+    color: var(--corLink);
+}
+
+main .inferior{
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+    padding: 0 0 2rem;
+    display: flex;
+    gap: 16px;
+}
+
+main .inferior .texto{
+    width: 100%;
+    justify-content: space-around;
+    font-family: var(--fontTextos);
+    background: var(--corBanner);
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0px 0px 16px var(--corShadow);
+}
+
+main .inferior .texto svg{
+    width: 77px;
+    display: flex;
+    fill: var(--corSecundaria);
+    margin: auto;
+}
+
+main .inferior .texto h3{
+    text-align: center;
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: var(--fontTamanhoTextos);
+    color: var(--corTitulos);
+}
+
+main .inferior .texto p{
+    text-align: justify;
+    line-height: var(--fontLineHeigh);
+    font-size: var(--fontTamanhoTextos);
+    font-weight: var(--fontPesoTextos);
+    color: var(--corTextos);
+}
+
+/* #################################### FOOTER - Rodape do site configuracao #################################### */
+
+footer .container{
+    border-top: solid 0.4px #eaeaea;
+    padding: 12px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+footer .container h3{
+    text-align: center;
+    color: #eaeaea;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+footer .container .icones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8px;
+    gap: 30px;
+    fill: #7a7a7a;
+}
+
+footer .container .icones .iconeLogo1 a svg{
+    width: 70px;
+    transition: 0.5s;
+}
+
+footer .container .icones .iconeLogo1 a svg:hover{
+    fill: #3F72F2;
+    transform: scale(1.2) translate(0%, -12px);
+}
+
+footer .container .icones .iconeLogo2 a svg{
+    width: 50px;
+    transition: 0.5s;
+}
+
+footer .container .icones .iconeLogo2 a svg:hover{
+    fill: #2746E6;
+    transform: scale(1.2) translate(0%, -12px);
+}
+
+footer .container .icones .iconeLogo3 a svg{
+    width: 50px;
+    transition: 0.5s;
+}
+
+footer .container .icones .iconeLogo3 a svg:hover{
+    fill: #eebb1a;
+    transform: scale(1.2) translate(0%, -12px);
+}
+
+footer .container .icones .iconeLogo4 a svg{
+    width: 70px;
+    transition: 0.5s;
+}
+
+footer .container .icones .iconeLogo4 a svg:hover{
+    fill: #c30101;
+    transform: scale(1.2) translate(0%, -12px);
+}
+
+/* #################################### Responsividade do site  telas pequenas 1280 - 769px ###################### */
+
+@media screen and (max-width: 769px){
+    main .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .container .logoM3d{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        font-size: 14px;
+        gap: 4px;
+    }
+
+    header .container .topMenu nav{
+        padding: 0 8px;
+        gap: 8px;
+    }
+
+    header .container .topMenu nav a{
+        font-size: 1rem;
+    }
+
+    header .container .topMenu nav button{
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+    main .container .menuLateral{
+        margin-top: 0px;
+    }
+
+    main .resumo .texto details p{
+        width: 100%;
+        text-align: left;
+    }
+
+    main .centralTitulo{
+        width: 90%;
+        text-align: center;
+    }
+
+    main .centralTitulo h3{
+        font-size: 1rem;
+    }
+
+    main .centralTitulo::before{
+        margin-top: 70px;
+    }
+
+    main .central{
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    main .central .texto{
+        min-width: 90%;
+        padding: 1rem;
+    }
+
+    main .central .foto{
+        padding: 22px;
+    }
+
+    main .central .foto img{
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    main .experiencia{
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    main .experiencia h3{
+        font-size: 1.5rem;
+    }
+    
+    main .experiencia svg{
+        margin: auto;
+    }
+
+    main .inferior{
+        flex-direction: column;
+    }
+
+    main .inferior .texto{
+        width: 95%;
+        margin: auto;
+    }
+}
