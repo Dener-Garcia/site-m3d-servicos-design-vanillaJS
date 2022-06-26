@@ -99,7 +99,8 @@ figcaption{
 }
 
 code{
-    width: 50%;
+    width: 75%;
+    font-family: var(--fontTextos);
     font-size: var(--fontTamanhoTextos);
     font-weight: var(--fontPesoTextos);
     font-style: italic;
