@@ -60,7 +60,7 @@
                 </a>
 
 <!-- Titulo do post -->
-                <h1>Aprenda a usar o GitHub de uma vez por todas</h1> 
+                <h1>Como usar o GitHub de uma vez por todas</h1> 
 
 <!-- Capa do post -->                
                 <span class="imgCapa">
@@ -247,9 +247,52 @@
                         <figcaption>Criando um repositório no GitHub</figcaption>
                     </figure>  
 
-                <p>Lembra daquela chave .ssh que criamos e colocamos dentro de uma pasta na nossa HOME, então vamos utiliza-la agora, navegue pelo terminal até essa pasta</p>
+                <p>Lembra daquela chave .ssh que criamos e colocamos dentro de uma pasta na nossa HOME, então vamos utiliza-la agora, navegue pelo terminal até a sua pasta.</p>
 
-                <code>cd hom</code>
+                <code>cd .chavesSSH</code>
+
+                <p>De um "ls" no terminal para ver o nome da sua chave.</p>
+
+                <code>ls</code>
+
+                <p>Digite o comando abaixo para iniciar o agent que será responsável por cuidar da nossa chave ssh.</p>
+
+                <code>eval $(ssh-agent -s)</code>
+
+                <figure>
+                    <img src="/blogger/tutoriais/Github-como-usar/0-passo-7.png" alt="Resposta do terminal após comando para iniciar o agent">
+                        <figcaption>Resposta do terminal após iniciar o agent de chaves ssh</figcaption>
+                    </figure>
+
+                <p>Por fim ative a chave SSH privada para o Agent, aquela que <strong>não</strong> possui o .pub, utilize o comando abaixo, uma dica é realizar este comando dentro daquela pasta que criamos no meu caso a pasta “.chavesSSH”
+                </p>    
+
+                <code>ssh-add nome-da-chave-privada</code>
+
+                <figure>
+                    <img src="/blogger/tutoriais/Github-como-usar/0-passo-13.png" alt="Resposta do terminal após comando para iniciar o agent e adicionar chave ssh">
+                        <figcaption>Resposta do terminal após adicionar chave ssh</figcaption>
+                    </figure>
+
+                <p>Agora vamos fazer o famoso push que é enviar os arquivos para o GitHub. Volte para a pasta do seu projeto caso não esteja nela, após ter feito os passos anteriores basta executar os comandos abaixo</p>    
+
+                <code>git branch -M main</code>
+                <figcaption>Serve para específicar em qual branch vamos subir o código</figcaption>
+
+                <code>git remote add origin xxxx</code>
+                <figcaption>substituir o os "xxxx" pelo link que você copiou</figcaption>
+                <p>O parâmetro "origin" do comando acima é um Alias ou apelido para o seu link, para não ser preciso toda as vezes digitar todo o link do seu repositório do GitHub, você pode colocar outro nome nele se preferir.</p>
+                
+                <code>git push -u origin main</code>
+                <figcaption>Envia os arquivos para o GitHub</figcaption>
+
+                <p>Caso tenha ocorrido tudo bem você vera no terminal a conclusão do processo e no seu GitHub os arquivos já estão todos lá naquele repositório.
+                </p>
+
+                <figure>
+                    <img src="/blogger/tutoriais/Github-como-usar/0-passo-14.png" alt="Repositório com todos nossos arquivos após enviar para o github via linha comando">
+                        <figcaption>Repositório do GitHub com nossos arquivos</figcaption>
+                    </figure>
 
 <!-- Fim do post -->
                 <p>Bom e é isso, espero que tenha te ajudado com mais esse artigo, compartilhe e marque a gente e qualquer dúvida basta entrar em contato.</p>
