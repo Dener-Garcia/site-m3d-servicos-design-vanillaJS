@@ -44,7 +44,7 @@ body{
     background-color: #434343;
     background-color: #485461;
     background-color: #000000;
-    background-image: linear-gradient(47deg, #000000 0%, #2c3e50 74%);
+    background-image: linear-gradient(30deg, #080808 0%, #2c3e50 20%, #28313B 75%);
 }   
 
 /* ================= HEADER - CABECALHO DO SITE ================= */
@@ -348,5 +348,9 @@ footer .container .icones .iconeLogo4 a svg:hover{
     main .filtro{
         flex-direction: column;
         align-items: center;
+    }
+
+    main .gridPost{
+        margin: auto;
     }
 }
