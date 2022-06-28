@@ -256,13 +256,13 @@ main .container .filtroGaleria .filtroAtivo{
 /* == Configuracao do Frame da imagem para que ele se sobreponha aos outros em hover == */
 
 .container .galeriaFiltered .pic:hover{
-    z-index: 7;
+    z-index: 1;
 }
 
 /* == Cursor personalizado nos cards da imgens de projeto == */
 
 .container .galeriaFiltered .pic{
-    cursor: url('img-main/zoom.png'), auto;	
+    cursor: url('/myAssets/zoom.png'), auto;	
 }
 
 .container .galeriaFiltered .titulo{
