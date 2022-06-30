@@ -1,40 +1,49 @@
 # Web site Mundo em 3D - M3D
 
-1 - Site para divulgação dos meus serviços prestados, em paralelo criei um blog para ajudar e disseminar conhecimentos sobre o mundo open source e Linux para todos.
-2- Conheça meu [site](https://mundoem3d.com/).
-3- Lista com as funcionalidades:
+Site para divulgação dos meus serviços, em paralelo criei um blog para ajudar e disseminar conhecimentos sobre o mundo open source e Linux para todos.
 
-- [X] Funcionalidade tal
-- [X] Funcionalidade Y
+<br>
+<br>
+
+🖥️ Versão web                                             | 📲 Versão Mobile
+:----------:                                           |  :--------------:
+<img src="myAssets/main-page-site.png" width="100%"/>  |  <img src="myAssets/main-page-site-mobile.png" width="90%"/> 
 
 
-## 🛠️ Tecnologias utilizadas
+## Conheça meu [site aqui.](https://mundoem3d.com/)
 
-A ídeia era ter um site rápido e bonito mas principalmente acessivel a pessoas com deficiencia, foquei na responsividade do site e na acessibilidade como pilares para o projeto.
+Funcionalidades:
+
+- [X] Site adaptado para pessoas com deficiência
+- [X] Usado HTML semântico
+
+## 🧰 Tecnologias utilizadas
+
+A ídeia era ter um site rápido e bonito mas principalmente acessível a pessoas com deficiência, foquei na responsividade do site e na acessibilidade como pilares para o projeto.
 
 - CSS
 - HTML
 - Javascript
 
-Biblioteca utilizada:
+📚 Biblioteca utilizada:
 - [jQuery](https://jquery.com/)
 
-## Próximos passos
-- [ ] Criar barra de pesquisa funcional na sessão de Blog;
-- [ ] Criar contador de post por categoria;
+## 🔥 Próximos passos
+- [ ] Criar barra de pesquisa funcional na página Blog;
+- [ ] Criar contador de post por categoria na página Blog;
 
+## 😓 Dificuldades do projeto
+Havia muito tempo que eu não trabalhava com HTML, então tive um tempo de reaprendizado seguindo alguns tutoriais e aprendendo sobre novas tag e estilos css como: flexbox, seletores, animações com keyframes e transitions. 
 
-## ✒️ Autor
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
+Apesar das dificuldades acredito que consegui um bom resultado e espero melhora-lo ainda mais daqui para frente.
 
-* **[Nome do dev](https://github.com/linkParaPerfil)** - *Função*
-* **[Nome do dev](https://github.com/linkParaPerfil)** - *Função*
+## 🙏🏻 Agradecimentos
 
+Alguns conteúdos de tutoriais foram fundamentais para que eu pudesse me desenvolver, então agradeço as pessoas que disponibilizam dicas e ensinam o que sabem na internet, seja pelo Youtube ou qualquer outro meio.
 
-
-## 🎁 Agradecimentos (se for para teste técnico não colocar esse)
-
-Agradeça quem te ajudou a fazer esse projeto! :)
-
-
-Template por [Adriana Saaty](https://github.com/AdrianaSaty/)
+#### Conceitos de FlexBox:
+- [Rafa Ballerini](https://github.com/rafaballerini) - *Usado em todas as páginas*
+#### Tutorial no youtube de formulário contato:
+- [Tiger Codes](https://github.com/tigercodes-io) - *Usado na página Contato*
+#### Tutorial de Blog só com HTML e CSS:
+- [Carpool Venom](https://www.youtube.com/c/CarpoolVenom) - *Usado na página Blog e Posts do blog*
