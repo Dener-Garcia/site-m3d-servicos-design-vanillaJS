@@ -38,7 +38,7 @@
                         <a href="/projetos">Projetos</a>
                         <a href="/sobre">Sobre</a>
                         <a href="/blog">Blog</a>
-                        <a href="/contato"><button>Contato</button></a>
+                        <button><a href="/contato.html">Contato</a></button>
                     </nav>
                     
                 </div>
@@ -86,7 +86,17 @@
                  
                 <p>O Git é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.</p>
 
-                <h3>Instalando o Git no PC</h3>
+                <h3>Lista de códigos utilizados</h3>
+                <ol>
+                    <li><a href="#step1">Instalação do git</a></li>
+                    <li><a href="#step2">Criar chave ssh</a></li>
+                    <li><a href="#step3">Configurar parâmetros do git</a></li>
+                    <li><a href="#step4">Adicionando arquivos ao git</a></li>
+                    <li><a href="#step5">Ativando chave ssh local</a></li>
+                </ol>
+
+                <h3 id="step1">Instalando o Git no PC</h3>
+              
 
                 <p>O primeiro passo caso você não tenha o Git é realizar a instalação do git no PC que você vai trabalhar com seus projetos. Como estou utilizando Linux vamos realizar todas as atividades pelo terminal.
                 </p>
@@ -133,7 +143,7 @@
                 <p>Use o comando abaixo para criar sua chave ssh, lembre de substituir pelo e-mail que você vai utilizar para logar no GitHub também.
                 </p>
 
-                <code>ssh-keygen -t ed25519 -C seu_email@example.com</code>
+                <code id="step2">ssh-keygen -t ed25519 -C seu_email@example.com</code>
 
                 <p>O terminal vai retornar pedindo para você dar um nome ao arquivo da chave, você pode colocar o nome que desejar, por exemplo "chaveGitHub", "sshMeuComputador" ou outro nome que te ajude a lembrar mais fácil, em passphrase não precisa colocar nada basta confirmar com enter 2 vezes
                 </p>
@@ -196,7 +206,7 @@
                 <p>Basicamente precisamos informar ao git quem está fazendo as modificações nos arquivos, precisamos informar um e-mail e um user name, ele irá utilizar isso nos futuros commits que vamos realizar no projeto.
                 </p>
 
-                <code>git config --global user.email "seuE-mail@mail.com"</code>
+                <code id="step3">git config --global user.email "seuE-mail@mail.com"</code>
                 <code>git config --global user.name "Seu nome"</code>
 
                 <p>Caso queira verificar suas informações cadastradas use o comando abaixo:</p>
@@ -215,7 +225,7 @@
                 <p>Agora vamos dizer ao Git que queremos incluir as atualizações dos nossos arquivos no próximo commit, e vamos verificar o status novamente, 
                     você vai reparar que agora os arquivos estão verdes, ou seja foram adicionados ao repositório local do seu git porém não foram confirmadas as alterações para o git.</p>
 
-                <code>git add *</code>
+                <code id="step4">git add *</code>
                 <code>git status</code>
 
                 <figure>
@@ -257,7 +267,7 @@
 
                 <p>Digite o comando abaixo para iniciar o agent que será responsável por cuidar da nossa chave ssh.</p>
 
-                <code>eval $(ssh-agent -s)</code>
+                <code id="step5">eval $(ssh-agent -s)</code>
 
                 <figure>
                     <img src="/blogger/tutoriais/Github-como-usar/0-passo-7.png" alt="Resposta do terminal após comando para iniciar o agent">
