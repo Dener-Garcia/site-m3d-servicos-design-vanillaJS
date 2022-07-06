@@ -110,6 +110,10 @@ header .container .topMenu nav button:hover{
     color: #eaeaea;
 }
 
+header .container .topMenu nav button a:hover{
+    text-decoration: none;
+}
+
 /* ================================== MAIN - CORPO DO SITE ==================================*/
 
 .container{
