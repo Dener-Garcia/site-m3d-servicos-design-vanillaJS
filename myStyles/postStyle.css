@@ -57,7 +57,7 @@ h3{
     font-size: var(--fontTamanhoGrandes);
     font-weight: var(--fontPesoTitulos);
     color: var(--corTitulos);
-    padding: 8px;
+    padding: 1rem;
 }
 
 p{
@@ -65,7 +65,7 @@ p{
     font-weight: var(--fontPesoTextos);
     line-height: var(--fontLineHeigh);
     text-align: justify;
-    padding: 12px 0;
+    padding: 1rem 0;
     color: var(--corTextos);
 }
 
@@ -73,7 +73,7 @@ li{
     font-size: 1.5rem;
     font-weight: var(--fontPesoTitulos);
     color: var(--corTitulos);
-    padding: 12px;
+    padding: 1rem;
     margin-left: 2rem;
 }
 
@@ -97,6 +97,7 @@ figcaption{
     font-family: var(--fontTextos);
     font-size: 1rem;
     color: var(--corOverlay);
+    line-height: var(--fontLineHeigh);
 }
 
 code{
@@ -107,7 +108,7 @@ code{
     font-style: italic;
     background: var(--corBanner);
     color: var(--corTitulos);
-    padding: 4px;
+    padding: 8px;
 }
 
 body{

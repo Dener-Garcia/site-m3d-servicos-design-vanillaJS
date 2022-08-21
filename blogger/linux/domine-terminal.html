@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M3D-Blog-Domine o terminal do Linux</title>
+    <meta name="description" content="Serviços de design para voce e sua empresa">
+    <link rel="stylesheet" href="/myStyles/postStyle.css">
+    <link rel="shortcut icon" href="/myAssets/Logo-Icone-512.ico">
+</head>
+
+<body>
+
+    <header>
+
+        <section>
+
+            <div class="container">
+                
+                <div class="logoM3d">
+
+                    <a href="https://mundoem3d.com">
+                        <!-- Created with Inkscape (http://www.inkscape.org/) -->
+                        <svg width="34.782mm" height="21.076mm" version="1.1" viewBox="0 0 34.782 21.076" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="translate(-428.46 -115.91)">
+                            <g fill="#f4ad1a">
+                            <path transform="scale(.26458)" d="m1656.5 438.07c-2.3089-9e-3 -4.1857 1.0783-5.8789 2.7715-1.5393 1.5393-3.3449 3.7082-2.3086 5.7715l35.715 71.115h16.721l-16.279-30.662 0.1679-0.0898-12.81-24.295-13.062-24.602zm10.391 0.041 8.1914 15.428h39.424c6.7728 0 11.697 0.69356 14.775 4.8496 0.774 0.995 1.4485 2.1358 2.0372 3.4043h17.52c-1.4912-5.5362-3.849-10.141-7.0879-13.795-6.0032-6.465-15.084-9.6489-27.244-9.6973zm66.555 30.846c0.4571 2.6818 0.6856 5.7002 0.6856 9.0566 0 2.2215-0.099 4.2807-0.295 6.1816h16.627c0.1937-1.9983 0.291-4.0589 0.291-6.1816 0-3.2103-0.1802-6.2266-0.5332-9.0566zm-1.0488 22.402c-0.8228 2.4947-1.9374 4.5125-3.3457 6.0488-3.5403 4.0021-9.0806 6.0039-16.623 6.0039h-11.17l7.6016 14.316h1.2578c7.5424 0 13.161-0.53968 16.856-1.6172 3.8481-1.0775 7.4651-2.9243 10.852-5.541 4.0021-3.0785 7.2345-7.5433 9.6973-13.393 0.7056-1.8648 1.295-3.805 1.7695-5.8184z" stroke-width="2.9554"/>
+                            <g transform="translate(60.018 -.68305)" stroke-width=".78195" aria-label="M">
+                            <path d="m368.44 137.67v-18.816c0-0.6109 0.20363-1.12 0.6109-1.5272 0.44799-0.44799 0.97744-0.69235 1.5883-0.73308h4.2152l4.1541 16.067-4.1541-16.067h3.4074l11.315 21.076h-4.0319l-9.0413-16.983 4.3374 16.983h-4.0319l-4.3374-16.983v16.983z" fill="#f4ad1a"/>
+                            </g>
+                            </g>
+                            <path d="m463.08 124.08c0.14769 1.1219 0.24458 2.5853 0.0631 4.0319l-10.995 1e-5 -2.126-4.0319z" fill="#3434bc" stroke-width=".26458"/>
+                            </g>
+                        </svg>
+                    </a>
+                    <span>Soluções em design</span>
+
+                </div>
+            
+                <div class="topMenu">
+                        
+                    <nav>
+                        <a href="/projetos">Projetos</a>
+                        <a href="/sobre">Sobre</a>
+                        <a href="/blog">Blog</a>
+                        <button><a href="/contato">Contato</a></button>
+                    </nav>
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+    </header>
+
+    <main>
+
+        <article>
+
+            <div class="banner">
+
+                <a href="/blog">Voltar
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M160 48C160 21.49 181.5 0 208 0C234.5 0 256 21.49 256 48C256 74.51 234.5 96 208 96C181.5 96 160 74.51 160 48V48zM112.7 205.4C97.41 212.2 85.42 224.6 79.22 240.1L77.71 243.9C71.15 260.3 52.53 268.3 36.12 261.7C19.71 255.1 11.73 236.5 18.29 220.1L19.8 216.3C32.19 185.4 56.18 160.5 86.66 146.9L97.66 142C118.5 132.8 140.1 128 163.7 128C208.3 128 248.5 154.8 265.6 195.9L280.1 232.7L302.3 243.4C318.1 251.3 324.5 270.5 316.6 286.3C308.7 302.1 289.5 308.5 273.7 300.6L247 287.3C236.7 282.1 228.6 273.4 224.2 262.8L214.6 239.8L195.3 305.3L244.8 359.4C250.2 365.3 254.1 372.4 256 380.2L279 472.2C283.3 489.4 272.9 506.8 255.8 511C238.6 515.3 221.2 504.9 216.1 487.8L194.9 399.6L124.3 322.5C109.5 306.4 103.1 283.9 109.6 262.8L126.5 199.3C125.6 199.7 124.6 200.1 123.7 200.5L112.7 205.4zM100.7 344.2L141.4 388.6L126.9 424.8C124.5 430.9 120.9 436.4 116.3 440.9L54.63 502.6C42.13 515.1 21.87 515.1 9.372 502.6C-3.124 490.1-3.124 469.9 9.372 457.4L68.73 398L93.69 335.6C95.84 338.6 98.17 341.4 100.7 344.2H100.7zM361.4 374.6C348.9 362.1 348.9 341.9 361.4 329.4L441.4 249.4C453.9 236.9 474.1 236.9 486.6 249.4C499.1 261.9 499.1 282.1 486.6 294.6L461.3 320H480C533 320 576 277 576 224C576 170.1 533 128 480 128H352C334.3 128 319.1 113.7 319.1 96C319.1 78.33 334.3 64 352 64H480C568.4 64 640 135.6 640 224C640 312.4 568.4 384 480 384H461.3L486.6 409.4C499.1 421.9 499.1 442.1 486.6 454.6C474.1 467.1 453.9 467.1 441.4 454.6L361.4 374.6z"/></svg>
+                </a>
+
+<!-- Titulo do post -->
+                <h1>Domine o terminal do Linux</h1> 
+
+<!-- Capa do post -->                
+                <span class="imgCapa">
+                    <img src="/blogger/tutoriais/Github-como-usar/capa.jpg" alt="Logo do git hub, fundo branco com simbolo de um gatinho em preto"> 
+                </span>
+            
+            </div>
+            
+            <article>
+
+            <div class="containerPost">
+
+<!-- introducao do post -->
+                <div class="resumoPost">
+
+                    <p>Nesse post quero te ensinar a dominar totalmente os comandos do linux, vamos aprender os comandos mais simples até os mais avançados como configuração de rede, acesso de usuários e muito mais.</p>
+                    <p>Já pega a dica... No final do post tem uma lista com todos os comandos utilizados nesse post, então se você precisar de algum comando específico basta dar uma olhada na lista.</p>
+                </div>  
+
+<!-- H3 Sub titulos -->
+                <h3>Porque dominar o terminal?
+                </h3>
+                 
+                <p>Em linhas básicas, o terminal do Linux, também conhecido como shell, é um programa que recebe os comandos do usuário a partir do teclado e repassa-os às camadas de baixo nível do sistema operacional. Logo, podemos defini-lo como um mecanismo de software que intermedeia a interação do usuário com o Linux.</p>
+
+                <h3 id="step1">Manual de ajuda - "man"</h3>
+
+                <p>O primeiro comando que vamos aprender é o <code>man</code> ele serve para mostrar o manual de algum outro comando que você está utilizando ou que queria saber como funciona.
+                </p>
+
+                <code>man ls</code>
+                <figcaption>Dentro terminal vai abrir uma janela com o manual do comando ls com todos seus parâmetros e funções;</figcaption>
+                <figcaption>Dentro do manual use a / para pesquisar alguma palavra chave;</figcaption>
+                <figcaption>Para sair do manual basta digitar letra "q".</figcaption>
+
+                <h3 id="step2">Ajuda rápida - "--help"</h3>
+
+                <p>Outro comando de ajuda é o <code>"xxx" --help</code> semelhante ao "man" mas com menos informações, sendo bastante útil para rápidas pesquisar de algum parâmetro que desejamos saber como funciona.
+                </p>
+
+                <code>ls --help</code>
+                <figcaption>Troque o "xxx" pelo comando que deseja receber ajuda e depois o --help.</figcaption>
+                
+                <h3 id="step3">Usuário Root - "sudo -i"</h3>
+
+                <p>Algumas vezes precisamos nos tornar o usuário root do sistema o que tem permissão para alterar arquivos do próprio Linux para isso usamos o <code>sudo -i</code> Lembre-se de tomar cuidado com suas ações estando nesse modo.
+                </p>
+
+                <code>sudo -i</code>
+                <figcaption>Em algumas distribuições esse comando pode ser feito através do "su".</figcaption>
+
+                <h3 id="step4">Torna-se outro usuário do sistema - "su"</h3>
+
+                <p>Para se tornar outro usuário do sistema utilize o <code>su "xxx"</code> será necessário ter a senha desse usuário para ter acesso as suas pastas.
+                </p>
+
+                <code>su OutroUsuário</code>
+                <figcaption>Troque o "xxx" pelo nome correto do usuário que você deseja se tornar;</figcaption>
+                <figcaption>É preciso ter a senha desse usuário para o comando funcionar.</figcaption>
+                
+                <h3 id="step5">Criar um novo usuário - "sudo adduser"</h3>
+
+                <p>Somente o usuário sudo pode criar novos usuários através do comando <code>sudo adduser "xxx"</code>, não há limites para de quantidade de usuários que podem ser criados.
+                </p>
+
+                <code>sudo adduser NovoUsuário</code>
+                <figcaption>Troque o "xxx" pelo nome do usuário, em seguida crie a senha para este usuário</figcaption>
+                <figcaption>Use o comando com o parâmetro "-d" para informar o diretório padrão desse usuário, e o "-p" para informar a senha do novo usuário.</figcaption>
+
+                <h3 id="step6">Alterar senha de um usuário - "passwd"</h3>
+
+                <p>Para trocar a senha do seu usuário atual pasta utilizar o comando <code>passwd</code> seguido da nova senha que deve cumprir alguams regras. para mudar a senha de outro usuário basta adicionar o nome dele a frente do comando <code>passwd "xxx"</code>.
+                </p>
+
+                <code>passwd</code>
+                <code>sudo passwd OutroUsuário</code>
+                <figcaption>A senha deve cumprir algumas regras como quantidade minima de letras e números;</figcaption>
+                <figcaption>Para trocar a senha de outro usuário diferente do seu é necessário digitar o comando com o sudo.</figcaption>
+
+                <h3 id="step7">Excluir um usuário - "sudo userdel"</h3>
+
+                <p>Somente o usuário sudo pode deletar os usuários com o seguinte comando <code>sudo userdel "xxx"</code>, Há alguns parâmetros interessantes para se usar com esse comando, como o -r para remover o diretório de home desse usuário.
+                </p>
+
+                <code>sudo userdel NovoUsuário</code>
+                <figcaption>Troque o "xxx" pelo nome do usuário, em alguns casos pode-se usar o "deluser" também;</figcaption>
+                <figcaption>Outra forma de deletar um usuário é modificando o arquivo "/etc/passwd", basta apagar as linhas como o nome dele.</figcaption>  
+
+                <h3 id="stepxxx"> - ""</h3>
+
+                <p> <code>man</code> .
+                </p>
+
+                <code>man ls</code>
+                <figcaption>;</figcaption>
+                <figcaption>;</figcaption>
+                <figcaption>.</figcaption>
+                
+                <h3 id="step9">Criando grupo de usuários - "sudo groupadd"</h3>
+
+                <p>Um grupo pode ser utilizado para categorizar múltiplos usuários com permissões diferentes, para tal basta usar o comando <code>sudo groupadd "xxx"</code> um comando simples mas muito funcional.
+                </p>
+
+                <code>sudo groupadd NomeUsuário</code>
+                <figcaption>Troque o "xxx" pelo nome do grupo que se deseja criar;</figcaption>
+                <figcaption>Você pode ver e editar a lista de todos os grupos no arquivo "/etc/group";</figcaption>
+                <figcaption>Os comandos de "del" e "mod" também funcionado afrente do "group".</figcaption>
+
+
+
+
+
+
+
+
+
+                <h3 id="stepxxx"> - ""</h3>
+
+                <p> <code>man</code> .
+                </p>
+
+                <code>man ls</code>
+                <figcaption>;</figcaption>
+                <figcaption>;</figcaption>
+                <figcaption>.</figcaption>
+                
+             
+                <figure>
+                    <img src="/blogger/tutoriais/Github-como-usar/0-passo-14.png" alt="Repositório com todos nossos arquivos após enviar para o github via linha comando">
+                        <figcaption>Repositório do GitHub com nossos arquivos</figcaption>
+                    </figure>
+
+                    <h3>Lista de todos os comandos</h3>
+                    <ol>
+                        <li><a href="#step1">Manual de ajuda - "man"</a></li>
+                        <li><a href="#step2">Ajuda rápida - "xxx --help"</a></li>
+                        <li><a href="#step3">Usuário Root - "sudo -i"</a></li>
+                        <li><a href="#step4">Torna-se outro usuário do sistema - "su"</a></li>
+                        <li><a href="#step5">Criar um novo usuário - "sudo adduser"</a></li>
+                        <li><a href="#step6">Alterar senha de um usuário - "passwd"</a></li>
+                        <li><a href="#step7">Excluir um usuário - "sudo userdel"</a></li>
+                        <li><a href="#step8">dddddddddd</a></li>
+                        <li><a href="#step9">Criando grupo de usuários - "sudo groupadd"</a></li>
+                        <li><a href="#step10">Ativando chave ssh local</a></li>
+                        <li><a href="#step11">Ativando chave ssh local</a></li>
+                        <li><a href="#step12">Ativando chave ssh local</a></li>
+                        <li><a href="#step13">Ativando chave ssh local</a></li>
+                        <li><a href="#step14">Ativando chave ssh local</a></li>
+                        <li><a href="#step15">Ativando chave ssh local</a></li>
+                        <li><a href="#step16">Ativando chave ssh local</a></li>
+                        <li><a href="#step17">Ativando chave ssh local</a></li>
+                        <li><a href="#step18">Ativando chave ssh local</a></li>
+                        <li><a href="#step19">Ativando chave ssh local</a></li>
+                    </ol>
+
+<!-- Fim do post -->
+                <p>Bom e é isso, espero que tenha te ajudado com mais esse artigo, compartilhe e marque a gente e qualquer dúvida basta entrar em contato.</p>
+
+                <p>Para mais dicas assine nossa newsletter e siga nas redes sociais, abaixo do post você tem acesso as nossas redes sociais.
+                </p>
+
+            </div>
+
+            </article>
+
+        </article>
+    
+            <section class="sharePost">
+
+                <span>Compartilhe esse artigo!</span>
+                
+                <div class="shareIcones">
+
+                                <!-- AddToAny BEGIN -->
+
+                    <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                        <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                        <a class="a2a_button_facebook"></a>
+                        <a class="a2a_button_twitter"></a>
+                        <a class="a2a_button_email"></a>
+                        <a class="a2a_button_linkedin"></a>
+                        <a class="a2a_button_whatsapp"></a>
+                        <a class="a2a_button_copy_link"></a>
+                        </div>
+                        <script>
+                        var a2a_config = a2a_config || {};
+                        a2a_config.locale = "pt-BR";
+                        </script>
+                        <script async src="https://static.addtoany.com/menu/page.js"></script>
+                        <!-- AddToAny END -->
+                        
+                   </div>
+
+                <div class="botaoReturn2">
+
+                    <a href="/blog">Voltar
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M160 48C160 21.49 181.5 0 208 0C234.5 0 256 21.49 256 48C256 74.51 234.5 96 208 96C181.5 96 160 74.51 160 48V48zM112.7 205.4C97.41 212.2 85.42 224.6 79.22 240.1L77.71 243.9C71.15 260.3 52.53 268.3 36.12 261.7C19.71 255.1 11.73 236.5 18.29 220.1L19.8 216.3C32.19 185.4 56.18 160.5 86.66 146.9L97.66 142C118.5 132.8 140.1 128 163.7 128C208.3 128 248.5 154.8 265.6 195.9L280.1 232.7L302.3 243.4C318.1 251.3 324.5 270.5 316.6 286.3C308.7 302.1 289.5 308.5 273.7 300.6L247 287.3C236.7 282.1 228.6 273.4 224.2 262.8L214.6 239.8L195.3 305.3L244.8 359.4C250.2 365.3 254.1 372.4 256 380.2L279 472.2C283.3 489.4 272.9 506.8 255.8 511C238.6 515.3 221.2 504.9 216.1 487.8L194.9 399.6L124.3 322.5C109.5 306.4 103.1 283.9 109.6 262.8L126.5 199.3C125.6 199.7 124.6 200.1 123.7 200.5L112.7 205.4zM100.7 344.2L141.4 388.6L126.9 424.8C124.5 430.9 120.9 436.4 116.3 440.9L54.63 502.6C42.13 515.1 21.87 515.1 9.372 502.6C-3.124 490.1-3.124 469.9 9.372 457.4L68.73 398L93.69 335.6C95.84 338.6 98.17 341.4 100.7 344.2H100.7zM361.4 374.6C348.9 362.1 348.9 341.9 361.4 329.4L441.4 249.4C453.9 236.9 474.1 236.9 486.6 249.4C499.1 261.9 499.1 282.1 486.6 294.6L461.3 320H480C533 320 576 277 576 224C576 170.1 533 128 480 128H352C334.3 128 319.1 113.7 319.1 96C319.1 78.33 334.3 64 352 64H480C568.4 64 640 135.6 640 224C640 312.4 568.4 384 480 384H461.3L486.6 409.4C499.1 421.9 499.1 442.1 486.6 454.6C474.1 467.1 453.9 467.1 441.4 454.6L361.4 374.6z"/></svg>
+                    </a>
+                    
+                </div>
+
+            </section>
+
+        </section>
+        
+    </main>
+
+    <footer>
+
+        <section>
+
+            <div class="container">
+
+                <h3>Me encontre aqui</h3>
+
+                    <div class="icones">
+                        
+                        <div class="iconeLogo1">
+
+                            <a href="https://www.behance.net/denergarcia_M3D" target="blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2.6-8.7.6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z"/></svg>
+                            </a> 
+
+                        </div> 
+                         
+                        <div class="iconeLogo2">
+
+                            <a href="https://www.linkedin.com/in/denergarcia/" target="blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                            </a>
+
+                        </div>  
+
+                        <div class="iconeLogo3">
+
+                            <a href="https://www.instagram.com/m3dener" target="blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                            </a>
+
+                        </div>
+                        
+                        <div class="iconeLogo4">
+
+                            <a href="https://www.youtube.com/channel/UCTt8-o-ya6n25WtuYTj0hBw" target="blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                            </a>
+
+                        </div>
+                     
+                    </div>
+
+            </div>
+
+         </section>
+
+    </footer>
+
+</body>
+
+</html>
