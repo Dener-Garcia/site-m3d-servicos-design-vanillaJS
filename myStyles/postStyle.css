@@ -17,17 +17,17 @@
     --corSecundaria: #d4a00a;
     --corTitulos: #eaeaea;
     --corTextos: #eaeaea;
-    --corOverlay: #7a7a7a;
+    --corOverlay: #8a8a8a;
     --corLink: #d4a00a;
     --corLinkHover: #4333b7;
     --corShadow: rgba(0, 0, 0, 0.7);
     --fontTextos: 'Open Sans', sans-serif;
     --fontPrincipal: 'Ubuntu', sans-serif;
     --fontPesoTextos: 400;
-    --fontLineHeigh: 1.7;
+    --fontLineHeigh: 1.8;
     --fontTamanhoTextos: 1.4rem;
     --fontTamanhoTitulos: 1.8rem;
-    --fontPesoTitulos: 700; 
+    --fontPesoTitulos: 900; 
     --fontTamanhoGrandes: 1.8rem;
     --fontTamanhoExtra: 2.5rem;
     --sombraEfeitoTitulos: -8px -5px 3px rgba(0, 0, 0, 0.7);
@@ -58,6 +58,7 @@ h3{
     font-weight: var(--fontPesoTitulos);
     color: var(--corTitulos);
     padding: 1rem;
+    margin-top: 2rem;
 }
 
 p{
@@ -108,7 +109,7 @@ code{
     font-style: italic;
     background: var(--corBanner);
     color: var(--corTitulos);
-    padding: 8px;
+    padding: 4px;
 }
 
 body{

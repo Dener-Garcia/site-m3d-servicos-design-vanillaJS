@@ -101,7 +101,7 @@
                 <figcaption>Dentro do manual use a / para pesquisar alguma palavra chave;</figcaption>
                 <figcaption>Para sair do manual basta digitar letra "q".</figcaption>
 
-                <h3 id="step2">Ajuda rápida - "--help"</h3>
+                <h3 id="step2">Ajuda rápida - "help"</h3>
 
                 <p>Outro comando de ajuda é o <code>"xxx" --help</code> semelhante ao "man" mas com menos informações, sendo bastante útil para rápidas pesquisar de algum parâmetro que desejamos saber como funciona.
                 </p>
@@ -154,17 +154,25 @@
                 <figcaption>Troque o "xxx" pelo nome do usuário, em alguns casos pode-se usar o "deluser" também;</figcaption>
                 <figcaption>Outra forma de deletar um usuário é modificando o arquivo "/etc/passwd", basta apagar as linhas como o nome dele.</figcaption>  
 
-                <h3 id="stepxxx"> - ""</h3>
+                <h3 id="step8">Modificando o grupo de um usuário - "sudo usermod -aG"</h3>
 
-                <p> <code>man</code> .
+                <p>Com o comando <code>sudo usermod "xxx" "yyy"</code> junto com os parâmetros -aG permitem adicionar um usuário a outros grupos, sem remove-lo do grupo atual, a frente do parâmetro insira o nome e logo depois o grupo novo do usuário.
                 </p>
 
-                <code>man ls</code>
-                <figcaption>;</figcaption>
-                <figcaption>;</figcaption>
-                <figcaption>.</figcaption>
-                
-                <h3 id="step9">Criando grupo de usuários - "sudo groupadd"</h3>
+                <code>sudo usermod -aG NomeUsuario NovoGrupoUsuario</code>
+                <figcaption>Troque o "xxx" pelo nome do usuário que se deseja alterar.</figcaption>
+                <figcaption>Troque o "yyy" pelo nome do grupo que se deseja inserir este usuário.</figcaption>
+
+                <h3 id="step9">Bloquear e desbloquear um usuário - "sudo usermod -L ou -U"</h3>
+
+                <p>Outra possíbilidade do comando <code>sudo usermod -L "xxx"</code> é a realização do bloqueio de um usuário através do parâmetro -L, e para liberar o usuário use o comando <code>sudo usermod -U "xxx"</code> adicionando parâmetro -U a frente do usermod.
+                </p>
+
+                <code>sudo usermod -L NomeUsuario</code>
+                <code>sudo usermod -U NomeUsuario</code>
+                <figcaption>Troque o "xxx" pelo nome do usuário que se deseja bloquear ou desbloquear.</figcaption>
+
+                <h3 id="step10">Criando grupo de usuários - "sudo groupadd"</h3>
 
                 <p>Um grupo pode ser utilizado para categorizar múltiplos usuários com permissões diferentes, para tal basta usar o comando <code>sudo groupadd "xxx"</code> um comando simples mas muito funcional.
                 </p>
@@ -174,13 +182,105 @@
                 <figcaption>Você pode ver e editar a lista de todos os grupos no arquivo "/etc/group";</figcaption>
                 <figcaption>Os comandos de "del" e "mod" também funcionado afrente do "group".</figcaption>
 
+                <h3 id="step11">Mostrar o diretório atual - "pwd"</h3>
 
+                <p>Algumas vezes podemos ficar confusos de onde realmente estamos dentro do terminal, para isso temos o comando <code>pwd</code> print work directory, ele mostra exatamente em qual diretório você esta.
+                </p>
 
+                <code>pwd</code>
 
+                <h3 id="step12">Listar arquivos e diretórios - "ls"</h3>
 
+                <p>O comando <code>ls</code> exibe as pastas e arquivos de um diretório, podendo ser aquele que você está no momento, ou um outro diretório que você deseja saber, basta adicionar o caminho completo a frente, com o comando <code>ls /xxx/xxx</code> dependendo da pasta que se deseja listar os diretórios pode ser necessário o uso do sudo antes do comando.
+                </p>
 
+                <code>ls</code>
+                <code>ls /home/NomeUsuario/Videos</code>
+                
+                <figcaption>Troque o "xxx" pelo endereço completo da pasta que se deseja listar os diretórios.</figcaption>
 
+                <h3 id="step13">Principais parâmetros usados com ls - "ls -a e -h"</h3>
+               
+                <p>Há muitos parametros úteis para o ls, por exemplo para ver pastas invisíveis use o parâmetro "-a", para ver o tamanho das pastas ou arquivos e o tipo de permissionamento que cada um possui usamos o parâmetro -lh.
+                </p>
 
+                <code>ls -a /home/NomeUsuario</code>
+                <code>ls -lh /home/NomeUsuario</code>
+                <figcaption>Utilize o parâmetro -a para ver todos os arquivos da sua home;</figcaption>
+                <figcaption>Usando o parâmetro -lh é possível ver uma lista completa dos arquivos separadas em colunas;</figcaption>
+                <figcaption>Primeiro item da coluna "drwxr-xr-x". Significados: "d" é de diretório, "-" é um arquivo, "l" é um link;</figcaption>
+                <figcaption>Os três itens após o "d" são as permissões do dono desse arquivo "r" de read, "w" write, "x" execute;</figcaption>
+                <figcaption>Os três itens após o "drwxr-" são as permissões do grupo do dono desse arquivo;</figcaption>
+                <figcaption>Os três itens finais após o "drwxr-xr-" são as permissões dos demais usuários;</figcaption>
+                <figcaption>Os três itens finais após o "drwxr-xr-" são as permissões dos demais usuários;</figcaption>
+                <figcaption>Segunda coluna nos diz a quantidade de arquivos dentro dos diretórios;</figcaption>
+                <figcaption>Terceira e quarta coluna nos diz o nome do dono do arquivo e o grupo do dono arquivo respectivamente;</figcaption>
+                <figcaption>Quinta coluna nos mostra o tamanho do arquivo ou diretório;</figcaption>
+
+                <figure>
+                    <img src="/blogger/linux/domine-terminal/ls-lh-example.jpg" alt="Print da tela do termina linux, tela preta com comandos de baixo nivel">
+                        <figcaption>Exemplo do comando "ls -lh na home de um usuário comum</figcaption>
+                    </figure>
+  
+                <h3 id="step14">Alterar o dono de um arquivo - "sudo chown"</h3>
+
+                <p>Com o comando <code>sudo chown "xxx" "yyy"</code> é possível alterar o dono de um arquivo ou até mesmo de um diretório inteiro.
+                </p>
+    
+                <code>sudo chown root NomeArquivo</code>
+                <figcaption>Troque o "xxx" pelo nome do novo dono do arquivo desejado;</figcaption>
+                <figcaption>Troque o "yyy" pelo nome do arquivo ou diretório.</figcaption>
+                    
+                <h3 id="step15">Alterar o grupo do dono de um arquivo - "sudo chown :"</h3>
+
+                <p>O comando <code>sudo chown "xxx":"yyy" "zzz"</code> é possível alterar o grupo do arquivo e definir ou não um novo dono.
+                </p>
+    
+                <code>sudo chown root:adm NomeArquivo</code>
+                <figcaption>Troque o "xxx" pelo nome do novo dono, caso não queira alterar o dono, começe apartir do ":" o comando;</figcaption>
+                <figcaption>Troque o "yyy" pelo nome do grupo que se deseja alterar o arquivo;</figcaption>
+                <figcaption>Troque o "zzz" pelo nome do arquivo ou diretório.</figcaption>
+                
+                <h3 id="step16">Alterar as permissões de arquivos - "sudo chmod -R"</h3>
+
+                <p>O comando <code>sudo chmod "xxx" "yyy"</code> é usado para lidar com permissões de arquivos do sistema Linux, com esse comando o dono do arquivo (ou seja, o usuário que o criou), pode mudar as permissões dos demais usuários para aquele arquivo, use o -R para redefinir os arquivos dentro de um diretório também. 
+                </p>
+                    
+                <code>sudo chmod -R 751 NomeArquivo</code>
+                <figcaption>Troque o "xxx" pelo tipo de permissão, primeira letra ou número é do usuário, a segunda do grupo e a terceira dos outros usuários;</figcaption>
+                <figcaption>0 - Sem permissão;</figcaption>
+                <figcaption>1 - Apenas executar;</figcaption>
+                <figcaption>2 - Apenas gravar;</figcaption>
+                <figcaption>3 - Gravar e executar;</figcaption>
+                <figcaption>4 - Apenas ler;</figcaption>
+                <figcaption>5 - Ler e executar;</figcaption>
+                <figcaption>6 - Ler e gravar;</figcaption>
+                <figcaption>7 - Ler, gravar e executar.</figcaption>
+
+                <h3 id="step17">Criar diretórios - "mkdir"</h3>
+
+                <p>Para criar um diretório use o comando <code>mkdir "xxx"</code> dentro de algum diretório que você esteja ou digitando o endereço completo do diretório, também é possível criar sub-diretórios dentro do novo diretório, basta usar o parâmetro"-p" a frente do "mkdir".
+                </p>
+
+                <code>mkdir NovoDiretorio</code>
+                <code>mkdir /home/NomeUsuario/Documents/NovoDiretorio</code>
+                <code>mkdir -pv /home/NomeUsuario/Documents/NovoDiretorio/NovoSubDiretorio/NovoSubSubDiretorio</code>
+                <figcaption>Troque o "xxx" pelo nome que você deseja dar ao diretório;</figcaption>
+                <figcaption>Utilize o parâmetro "-v" a frente do comando "mkdir" para receber uma confirmação da execução do comando.</figcaption>
+
+                <h3 id="step18">Mudando de diretório - "cd"</h3>
+
+                <p>Um dos comandos mais utilizados no terminal é o <code>cd "xxx"</code> ele serve para trocar você de diretório assim como você faria numa interface abrindo uma pasta depois a outra e voltaria na primeira pasta, você faz essas ações com esse comando.
+                </p>
+
+                <p>O comando "cd" tem vários parâmetros úteis, ele sozinho te joga de volta na sua "home", usando <code>cd ..</code> você volta em um diretório anterior, colocando o endereco completo você pode entrar em qualquer diretório que deseja de maneira rápida.
+                </p>
+
+                <code>cd NomeDiretorio</code>
+                <code>cd ..</code>
+                <code>cd /NomeDiretorio1/SubDiretorio1</code>
+                <code>cd ../NomeDiretorio2/SubDiretorio2</code>
+                <figcaption>Troque o "xxx" pelo nome do diretório que se deseja entrar;</figcaption>
 
                 <h3 id="stepxxx"> - ""</h3>
 
@@ -191,33 +291,32 @@
                 <figcaption>;</figcaption>
                 <figcaption>;</figcaption>
                 <figcaption>.</figcaption>
-                
              
                 <figure>
-                    <img src="/blogger/tutoriais/Github-como-usar/0-passo-14.png" alt="Repositório com todos nossos arquivos após enviar para o github via linha comando">
+                    <img src="/blogger/linux/domine-terminal/ls-lh-example.jpg" alt="Repositório com todos nossos arquivos após enviar para o github via linha comando">
                         <figcaption>Repositório do GitHub com nossos arquivos</figcaption>
                     </figure>
 
                     <h3>Lista de todos os comandos</h3>
                     <ol>
                         <li><a href="#step1">Manual de ajuda - "man"</a></li>
-                        <li><a href="#step2">Ajuda rápida - "xxx --help"</a></li>
+                        <li><a href="#step2">Ajuda rápida - "--help"</a></li>
                         <li><a href="#step3">Usuário Root - "sudo -i"</a></li>
                         <li><a href="#step4">Torna-se outro usuário do sistema - "su"</a></li>
                         <li><a href="#step5">Criar um novo usuário - "sudo adduser"</a></li>
                         <li><a href="#step6">Alterar senha de um usuário - "passwd"</a></li>
                         <li><a href="#step7">Excluir um usuário - "sudo userdel"</a></li>
-                        <li><a href="#step8">dddddddddd</a></li>
-                        <li><a href="#step9">Criando grupo de usuários - "sudo groupadd"</a></li>
-                        <li><a href="#step10">Ativando chave ssh local</a></li>
-                        <li><a href="#step11">Ativando chave ssh local</a></li>
-                        <li><a href="#step12">Ativando chave ssh local</a></li>
-                        <li><a href="#step13">Ativando chave ssh local</a></li>
-                        <li><a href="#step14">Ativando chave ssh local</a></li>
-                        <li><a href="#step15">Ativando chave ssh local</a></li>
-                        <li><a href="#step16">Ativando chave ssh local</a></li>
-                        <li><a href="#step17">Ativando chave ssh local</a></li>
-                        <li><a href="#step18">Ativando chave ssh local</a></li>
+                        <li><a href="#step8">Modificando o grupo de um usuário - "sudo usermod -aG"</a></li>
+                        <li><a href="#step9">Bloquear e desbloquear um usuário - "sudo usermod -L ou -U"</a></li>
+                        <li><a href="#step10">Criando grupo de usuários - "sudo groupadd"</a></li>
+                        <li><a href="#step11">Mostrar o diretório atual - "pwd"</a></li>
+                        <li><a href="#step12">Listar arquivos e diretórios - "ls"</a></li>
+                        <li><a href="#step13">Principais parâmetros usados com ls - "ls -a e -h"</a></li>
+                        <li><a href="#step14">Alterar o dono de um arquivo - "sudo chown"</a></li>
+                        <li><a href="#step15">Alterar o grupo do dono de um arquivo - "sudo chown :"</a></li>
+                        <li><a href="#step16">Alterar as permissões de arquivos - "sudo chmod -R"</a></li>
+                        <li><a href="#step17">Criar diretórios - "mkdir"</a></li>
+                        <li><a href="#step18">Mudando de diretório - "cd"</a></li>
                         <li><a href="#step19">Ativando chave ssh local</a></li>
                     </ol>
 
