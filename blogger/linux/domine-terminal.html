@@ -282,15 +282,19 @@
                 <code>cd ../NomeDiretorio2/SubDiretorio2</code>
                 <figcaption>Troque o "xxx" pelo nome do diretório que se deseja entrar;</figcaption>
 
-                <h3 id="stepxxx"> - ""</h3>
+                <h3 id="step19">Copiando arquivos e diretórios - "cp"</h3>
 
-                <p> <code>man</code> .
+                <p>O comando <code>cp "xxx" "yyy"</code> serve para copiar um arquivo ou diretório com pastas e subpastas de um local para o outro, no momento da cópia também é possível alterar o nome do arquivo colocando um novo nome após o caminho de destino, outro detalhe é que quando existe arquivos dentro das pastas é necessário usar alguns parâmetros para forçar essa cópia.
                 </p>
 
-                <code>man ls</code>
-                <figcaption>;</figcaption>
-                <figcaption>;</figcaption>
-                <figcaption>.</figcaption>
+                <code>cp NomeArquivo /caminho/destino</code>
+                <figcaption>Cópia simples de um arquivo;</figcaption>
+                <code>cp NomeArquivo /caminho/destino/NovoNomeArquivo.extensao</code>
+                <figcaption>Cópia de um arquivo trocando seu nome no destino;</figcaption>
+                <code>cp -rvp NomeDiretório /caminho/destino</code>
+                <figcaption>Usandos os parâmetros -rvp é possível copiar pastas e subpastas;</figcaption>
+              <code>cp -rvp NomeDiretório /caminho/destino/NovoNomeDiretório</code>
+                <figcaption>Cópia de uma pasta trocando seu nome no destino.</figcaption>
 
                 <h3 id="stepxxx"> - ""</h3>
 
